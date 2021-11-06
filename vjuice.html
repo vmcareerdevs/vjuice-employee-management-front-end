@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Management</title>
+        <style>
+            .center {
+                margin:auto;
+                width:60%;
+                border:5px solid #100972a6;
+                padding:12px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='center'>
+        <h1>Employee Management</h1>
+        <p style='color:blueviolet'>powered by team vjuice</p>
+        <fieldset>
+        <h3>Find Record</h3>
+        <label>Employee ID:</label>
+        <input type='text' id='search'>
+        <button type='button' onclick='console.log(search())'>Search</button>
+        <br>
+        <br>
+        </fieldset>
+        <fieldset>
+        <h3>Add Record</h3>
+        <label>Employee ID:</label>
+        <input type='text' class='addProp' id='ID'>
+        <br>
+        <br>
+        <label>Full Name:</label>
+        <input type='text' class='addProp' id='Name'>
+        <br>
+        <br>
+        <label>Department:</label>
+        <input type='text' class='addProp' id='Department'>
+        <br>
+        <br>
+        <label>Location:</label>
+        <input type='text' class='addProp' id='Location'>
+        <br>
+        <br>
+        <label>Role:</label>
+        <input type='text' class='addProp' id='Role'>
+        <br>
+        <br>
+        <label>Supervisor:</label>
+        <input type='text' class='addProp' id='Supervisor'>
+        <br>
+        <br>
+        <label>Salary:</label>
+        <input type='text' class='addProp' id='Salary'>
+        <br>
+        <br>
+        <label>Date Hired:</label>
+        <input type='text' class='addProp' id='DateHired'>
+        <br>
+        <br>
+        <button type=button onclick='console.log(add())'>Add</button>
+        <br>
+        </fieldset>
+        <fieldset>
+            <h3>Delete Record</h3>
+        <label>Employee ID:</label>
+        <input type='text' id='deleteRecord'>
+        <br>
+        <br>
+        <button type=button onclick='console.log(remove())'>Delete</button>
+        <br>
+        </fieldset>
+        <fieldset>
+            <h3>Update Existing Record</h3>
+            <label>Employee ID:</label>
+            <input type='text' class='updateProp' id='updateID'>
+            <br>
+            <br>
+            <label>Full Name:</label>
+            <input type='text' class='updateProp' id='updateName'>
+            <br>
+            <br>
+            <label>Department:</label>
+            <input type='text' class='updateProp' id='updateDepartment'>
+            <br>
+            <br>
+            <label>Location:</label>
+            <input type='text' class='updateProp' id='updateLocation'>
+            <br>
+            <br>
+            <label>Role:</label>
+            <input type='text' class='updateProp' id='updateRole'>
+            <br>
+            <br>
+            <label>Supervisor:</label>
+            <input type='text' class='updateProp' id='updateSupervisor'>
+            <br>
+            <br>
+            <label>Salary:</label>
+            <input type='text' class='updateProp' id='updateSalary'>
+            <br>
+            <br>
+            <label>Date Hired:</label>
+            <input type='text' class='updateProp' id='updateDateHired'>
+            <br>
+            <br>
+            <button type=button onclick='console.log(update())'>Update</button>
+            <br>
+            </fieldset>
+        </div>
+        <script src='vjuice.js'></script>
+    </body>
+</html>
